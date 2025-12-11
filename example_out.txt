@@ -1,0 +1,92 @@
+./uaconsole -t 10000 opc.tcp://10.0.0.128:4840
+=============================================
+   UAConsole - OPC UA Server Browser
+=============================================
+
+Connecting to opc.tcp://10.0.0.128:4840...
+[2025-12-11 01:30:10.742 (UTC+0300)] info/eventloop     Starting the EventLoop
+[2025-12-11 01:30:10.742 (UTC+0300)] info/network       TCP 4   | Opening a connection to "10.0.0.128" on port 4840
+[2025-12-11 01:30:10.838 (UTC+0300)] info/channel       TCP 4   | SC 3  | SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None and a revised lifetime of 600.00s
+[2025-12-11 01:30:10.839 (UTC+0300)] info/client        Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+[2025-12-11 01:30:10.842 (UTC+0300)] info/client        Use the EndpointURL opc.tcp://opcua-esp32:4840/ returned from FindServers
+[2025-12-11 01:30:10.842 (UTC+0300)] info/channel       TCP 4   | SC 3  | SecureChannel closed
+[2025-12-11 01:30:10.843 (UTC+0300)] info/network       TCP 5   | Opening a connection to "10.0.0.128" on port 4840
+[2025-12-11 01:30:10.843 (UTC+0300)] info/network       TCP 4   | Socket closed
+[2025-12-11 01:30:10.857 (UTC+0300)] info/channel       TCP 5   | SC 4  | SecureChannel opened with SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None and a revised lifetime of 600.00s
+[2025-12-11 01:30:10.857 (UTC+0300)] info/client        Client Status: ChannelState: Open, SessionState: Closed, ConnectStatus: Good
+[2025-12-11 01:30:10.861 (UTC+0300)] info/client        Selected endpoint 0 in URL opc.tcp://opcua-esp32:4840/ with SecurityMode None and SecurityPolicy http://opcfoundation.org/UA/SecurityPolicy#None
+[2025-12-11 01:30:10.861 (UTC+0300)] info/client        Selected UserTokenPolicy open62541-anonymous-policy with UserTokenType Anonymous and SecurityPolicy 
+[2025-12-11 01:30:10.865 (UTC+0300)] info/client        Client Status: ChannelState: Open, SessionState: Created, ConnectStatus: Good
+[2025-12-11 01:30:10.869 (UTC+0300)] info/client        Client Status: ChannelState: Open, SessionState: Activated, ConnectStatus: Good
+Connected successfully!
+
+=== RECURSIVE BROWSING OF OBJECTS FOLDER ===
+Objects  [ns=0;i=85] (Object)
+  FolderType  [ns=0;i=61] (ObjectType)
+  Server  [ns=0;i=2253] (Object)
+   ServerType  [ns=0;i=2004] (ObjectType)
+   NamespaceArray  [ns=0;i=2255] (Variable) = [String]
+   ServerArray  [ns=0;i=2254] (Variable) = [String]
+   Auditing  [ns=0;i=2994] (Variable) = false
+   ServiceLevel  [ns=0;i=2267] (Variable) = [Byte]
+   ServerDiagnostics  [ns=0;i=2274] (Object)
+    ServerDiagnosticsType  [ns=0;i=2020] (ObjectType)
+    ServerDiagnosticsSummary  [ns=0;i=2275] (Variable) = [ServerDiagnosticsSummaryDataType]
+    EnabledFlag  [ns=0;i=2294] (Variable) = false
+   ServerCapabilities  [ns=0;i=2268] (Object)
+    ServerCapabilitiesType  [ns=0;i=2013] (ObjectType)
+    MinSupportedSampleRate  [ns=0;i=2272] (Variable) = [Double]
+    MaxQueryContinuationPoints  [ns=0;i=2736] (Variable) = 0
+    LocaleIdArray  [ns=0;i=2271] (Variable) = [String]
+    MaxHistoryContinuationPoints  [ns=0;i=2737] (Variable) = 0
+    MaxBrowseContinuationPoints  [ns=0;i=2735] (Variable) = 5
+    ServerProfileArray  [ns=0;i=2269] (Variable) = [String]
+    SoftwareCertificates  [ns=0;i=3704] (Variable) = [SignedSoftwareCertificate]
+    AggregateFunctions  [ns=0;i=2997] (Object)
+     FolderType  [ns=0;i=61] (ObjectType)
+    OperationLimits  [ns=0;i=11704] (Object)
+     OperationLimitsType  [ns=0;i=11564] (ObjectType)
+     MaxNodesPerBrowse  [ns=0;i=11710] (Variable) = 0
+     MaxNodesPerTranslateBrowsePathsToNodeIds  [ns=0;i=11712] (Variable) = 0
+     MaxNodesPerWrite  [ns=0;i=11707] (Variable) = 0
+     MaxNodesPerRead  [ns=0;i=11705] (Variable) = 0
+     MaxNodesPerRegisterNodes  [ns=0;i=11711] (Variable) = 0
+     MaxNodesPerNodeManagement  [ns=0;i=11713] (Variable) = 0
+     MaxNodesPerMethodCall  [ns=0;i=11709] (Variable) = 0
+     MaxMonitoredItemsPerCall  [ns=0;i=11714] (Variable) = 0
+    ModellingRules  [ns=0;i=2996] (Object)
+     FolderType  [ns=0;i=61] (ObjectType)
+     Mandatory  [ns=0;i=78] (Object)
+      ModellingRuleType  [ns=0;i=77] (ObjectType)
+      NamingRule  [ns=0;i=112] (Variable) = [Int32]
+     Optional  [ns=0;i=80] (Object)
+      ModellingRuleType  [ns=0;i=77] (ObjectType)
+      NamingRule  [ns=0;i=113] (Variable) = [Int32]
+   ServerStatus  [ns=0;i=2256] (Variable) = [ServerStatusDataType]
+   ServerRedundancy  [ns=0;i=2296] (Object)
+    ServerRedundancyType  [ns=0;i=2034] (ObjectType)
+    RedundancySupport  [ns=0;i=3709] (Variable) = [Int32]
+   VendorServerInfo  [ns=0;i=2295] (Object)
+    VendorServerInfoType  [ns=0;i=2033] (ObjectType)
+   GetMonitoredItems  [ns=0;i=11492] (Method)
+  Diagnostic Counter  [ns=1;s=diagnostic_counter] (Variable) = 4
+  Loopback Input  [ns=1;s=loopback_input] (Variable) = 0
+  Loopback Output  [ns=1;s=loopback_output] (Variable) = 0
+  Discrete Inputs  [ns=1;s=discrete_inputs] (Variable) = 32
+  Discrete Outputs  [ns=1;s=discrete_outputs] (Variable) = 0
+  ADC1  [ns=1;s=adc_channel_1] (Variable) = 0
+  ADC2  [ns=1;s=adc_channel_2] (Variable) = 0
+  ADC3  [ns=1;s=adc_channel_3] (Variable) = 0
+  ADC4  [ns=1;s=adc_channel_4] (Variable) = 0
+[2025-12-11 01:30:11.583 (UTC+0300)] info/channel       TCP 5   | SC 4  | SecureChannel closed
+[2025-12-11 01:30:11.583 (UTC+0300)] info/client        Client Status: ChannelState: Fresh, SessionState: Closed, ConnectStatus: BadConnectionClosed
+[2025-12-11 01:30:11.583 (UTC+0300)] info/network       TCP 5   | Socket closed
+[2025-12-11 01:30:11.682 (UTC+0300)] info/eventloop     Stopping the EventLoop
+[2025-12-11 01:30:11.683 (UTC+0300)] info/network       UDP     | Shutting down the ConnectionManager
+[2025-12-11 01:30:11.683 (UTC+0300)] info/network       TCP     | Shutting down the ConnectionManager
+[2025-12-11 01:30:11.683 (UTC+0300)] info/eventloop     The EventLoop has stopped
+
+=== BROWSING COMPLETED ===
+Server URL: opc.tcp://10.0.0.128:4840
+Disconnected from server
+ 
